@@ -1,24 +1,26 @@
+# tutorial
 
-> Open this page at [https://notlegos.github.io/tutorial/](https://notlegos.github.io/tutorial/)
+```package
+pxt-nezha=github:elecfreaks/pxt-nezha
+pxt-PlanetX=github:elecfreaks/pxt-planetx
+```
 
-## Use as Extension
+## Title Here
+Text line 1<br>
+Text line 2
 
-This repository can be added as an **extension** in MakeCode.
+```blocks
+input.onButtonPressed(Button.A, function () {
+    neZha.setMotorSpeed(neZha.MotorList.M1, 100)
+})
+```
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/notlegos/tutorial** and import
 
-## Edit this project
+```ghost
+let a = 0
+```
 
-To edit this repository in MakeCode.
+## EXIT CONFIRMATION
+Are you sure you're done?
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/notlegos/tutorial** and click import
-
-#### Metadata (used for search, rendering)
-
-* for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+## Don't press "Done" unless you're truly done! @showdialog
