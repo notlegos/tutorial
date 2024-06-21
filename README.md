@@ -24,9 +24,10 @@ input.onButtonPressed(Button.B, function () {
 
 
 ```ghost
-let a = 0
 input.onGesture(Gesture.Shake, function () {
-    basic.showIcon(IconNames.Asleep)
+    for (let index = 0; index < 4; index++) {
+        neZha.setServoAngel(neZha.ServoTypeList._180, neZha.ServoList.S1, 90)
+    }
 ```
 
 ## EXIT CONFIRMATION
