@@ -6,6 +6,7 @@ pxt-PlanetX=github:elecfreaks/pxt-planetx
 ```
 
 ## Case 6: The Dancing Robot
+v2
 After turning on Microbit, show a picture of your choice :)<br>
 When button A is pressed, set motor speed percentage somewhere between 0-100 (hint: start low such as 10% in case things go wrong) <br>
 When button B is pressed, stop all motors! (it is a common mistake to forget to program a "stop" condition)<br>
