@@ -6,7 +6,6 @@ pxt-PlanetX=github:elecfreaks/pxt-planetx
 ```
 
 ## Case 6: The Dancing Robot
-v2
 After turning on Microbit, show a picture of your choice :)<br>
 When button A is pressed, set motor speed percentage somewhere between 0-100 (hint: start low such as 10% in case things go wrong) <br>
 When button B is pressed, stop all motors! (it is a common mistake to forget to program a "stop" condition)<br>
@@ -25,10 +24,23 @@ input.onButtonPressed(Button.B, function () {
 
 
 ```ghost
-input.onGesture(Gesture.Shake, function () {
-    for (let index = 0; index < 4; index++) {
-        neZha.setServoAngel(neZha.ServoTypeList._180, neZha.ServoList.S1, 90)
-    }
+basic.showNumber(0)
+basic.showLeds(`
+    . . . . .
+    . . . . .
+    . . . . .
+    . . . . .
+    . . . . .
+    `)
+basic.showIcon(IconNames.Heart)
+basic.showString("Hello!")
+basic.showArrow(ArrowNames.North)
+basic.pause(100)
+loops.everyInterval(500, function () {
+    music.setTempo(120)
+    music.setVolume(127)
+    music.play(music.stringPlayable("- - - - - - - - ", 120), music.PlaybackMode.UntilDone)
+})
 ```
 
 ## EXIT CONFIRMATION
